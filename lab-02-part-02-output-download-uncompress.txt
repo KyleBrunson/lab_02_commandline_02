@@ -89,7 +89,14 @@ $ curl google.com
 Copy and paste the output below.
 ----------
 
-
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   219  100   219    0     0   2009      0 --:--:-- --:--:-- --:--:--  2009<H                     TML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>301 Moved</TITLE></HEAD><BODY>
+<H1>301 Moved</H1>
+The document has moved
+<A HREF="http://www.google.com/">here</A>.
+</BODY></HTML>
 
 ==========
 9. And again.  This time, add www to the URL.
@@ -99,10 +106,9 @@ $ curl www.google.com
 Copy and paste the output below, but not the whole thing!  Just copy up to the part that has the title tags (<title>......</title>).
 ----------
 
- % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-100   219  100   219    0     0   1273      0 --:--:-- --:--:-- --:--:--  1273<H                               TML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
-<TITLE>301 Moved</TITLE>
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0<!                     doctype html><html itemscope="" itemtype="http://schema.org/WebPage" lang="en"><                     head><meta content="Search the world's information, including webpages, images,                      videos and more. Google has many special features to help you find exactly what                      you're looking for." name="description"><meta content="noodp" name="robots"><met                     a content="text/html; charset=UTF-8" http-equiv="Content-Type"><meta content="/i                     mages/branding/googleg/1x/googleg_standard_color_128dp.png" itemprop="image"><ti                     tle>Google</title><
 
 ==========
 10. That's great, but what if I want to save the file?  What flag/option and option argument would I use to download the page to a file called google.html?  Run it to download the URL www.google.com.
@@ -172,6 +178,29 @@ We're going to mess around with archiving and compressing files.  We'll make a d
 Copy and paste the output below.
 ----------
 
+'3D Objects'/                       'My Documents'@
+ AppData/                            ncftp/
+'Application Data'@                  NetHood@
+ BrawlhallaReplays/                  NTUSER.DAT
+ Contacts/                           ntuser.dat.LOG1
+ Cookies@                            ntuser.dat.LOG2
+ Desktop/                            NTUSER.DAT{7749912a-57ed-11e8-aa65-d050994d38a7}.TM.blf
+ Documents/                          NTUSER.DAT{7749912a-57ed-11e8-aa65-d050994d38a7}.TMContainer00000000000000000001.regtrans-ms
+ Downloads/                          NTUSER.DAT{7749912a-57ed-11e8-aa65-d050994d38a7}.TMContainer00000000000000000002.regtrans-ms
+ Favorites/                          ntuser.ini
+ fightcade.log                       OneDrive/
+ fightcade-debug.log                 Pictures/
+ ggpofba-ng.bkp.ini                  PrintHood@
+ ggpo-ng.ini                         Recent@
+ google.html                        'Saved Games'/
+ Intel/                              Searches/
+'Jihosoft Android Phone Recovery'/   SendTo@
+ Links/                             'Start Menu'@
+'Local Settings'@                    stuff/
+ MicrosoftEdgeBackups/               Templates@
+ mtec1002/                           Tracing/
+ mtec1002-lab-02.zip                 Videos/
+ Music/
 
 
 ==========
@@ -184,7 +213,7 @@ List the files in the directory you're currently in (which should be stuff).
 Copy and paste the output below.
 ----------
 
-
+hello.txt
 
 ==========
 18. Go up one directory back into your home directory.  Run the following commands exactly to create a compressed archive of the stuff folder.
@@ -196,6 +225,22 @@ List the files in the directory you're currently in (which should be home).
 Copy and paste the output below.
 ----------
 
+'3D Objects'/         'Jihosoft Android Phone Recovery'/                                                              ntuser.ini
+ AppData/              Links/                                                                                         OneDrive/
+'Application Data'@   'Local Settings'@                                                                               Pictures/
+ BrawlhallaReplays/    MicrosoftEdgeBackups/                                                                          PrintHood@
+ Contacts/             mtec1002/                                                                                      Recent@
+ Cookies@              mtec1002-lab-02.zip                                                                           'Saved Games'/
+ Desktop/              Music/                                                                                         Searches/
+ Documents/           'My Documents'@                                                                                 SendTo@
+ Downloads/            ncftp/                                                                                        'Start Menu'@
+ Favorites/            NetHood@                                                                                       stuff/
+ fightcade.log         NTUSER.DAT                                                                                     stuff.tar
+ fightcade-debug.log   ntuser.dat.LOG1                                                                                Templates@
+ ggpofba-ng.bkp.ini    ntuser.dat.LOG2                                                                                Tracing/
+ ggpo-ng.ini           NTUSER.DAT{7749912a-57ed-11e8-aa65-d050994d38a7}.TM.blf                                        Videos/
+ google.html           NTUSER.DAT{7749912a-57ed-11e8-aa65-d050994d38a7}.TMContainer00000000000000000001.regtrans-ms
+ Intel/                NTUSER.DAT{7749912a-57ed-11e8-aa65-d050994d38a7}.TMContainer00000000000000000002.regtrans-ms
 
 
 ==========
@@ -206,7 +251,7 @@ $ tar -cvf stuff.tar stuff
 Copy and paste the output below.
 ----------
 
-
+See 18. 
 
 ==========
 20. List the files in the directory you're currently in (which should be home).  
@@ -214,7 +259,7 @@ Copy and paste the output below.
 Copy and paste the output below. (It should contain stuff.tar)
 ----------
 
-
+See 18.
 
 ==========
 21. Now compress it!  Type:
@@ -224,6 +269,22 @@ gzip stuff.tar
 List your files again.... you should have a new file with a .gz extension.  Copy and paste the output of your this below.
 ----------
 
+'3D Objects'/         'Jihosoft Android Phone Recovery'/                                                              ntuser.ini
+ AppData/              Links/                                                                                         OneDrive/
+'Application Data'@   'Local Settings'@                                                                               Pictures/
+ BrawlhallaReplays/    MicrosoftEdgeBackups/                                                                          PrintHood@
+ Contacts/             mtec1002/                                                                                      Recent@
+ Cookies@              mtec1002-lab-02.zip                                                                           'Saved Games'/
+ Desktop/              Music/                                                                                         Searches/
+ Documents/           'My Documents'@                                                                                 SendTo@
+ Downloads/            ncftp/                                                                                        'Start Menu'@
+ Favorites/            NetHood@                                                                                       stuff/
+ fightcade.log         NTUSER.DAT                                                                                     stuff.tar.gz
+ fightcade-debug.log   ntuser.dat.LOG1                                                                                Templates@
+ ggpofba-ng.bkp.ini    ntuser.dat.LOG2                                                                                Tracing/
+ ggpo-ng.ini           NTUSER.DAT{7749912a-57ed-11e8-aa65-d050994d38a7}.TM.blf                                        Videos/
+ google.html           NTUSER.DAT{7749912a-57ed-11e8-aa65-d050994d38a7}.TMContainer00000000000000000001.regtrans-ms
+ Intel/                NTUSER.DAT{7749912a-57ed-11e8-aa65-d050994d38a7}.TMContainer00000000000000000002.regtrans-ms
 
 
 ==========
